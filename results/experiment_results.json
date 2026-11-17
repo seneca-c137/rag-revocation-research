@@ -1,0 +1,73 @@
+[ {
+  "testCaseId" : "TC-1",
+  "testCaseName" : "Baseline Authorized Retrieval",
+  "scenario" : "Alice (Finance Analyst) queries Q3 earnings report",
+  "userId" : "alice",
+  "passed" : true,
+  "latencyMs" : 18.097883,
+  "documentsReturned" : 1,
+  "cacheHit" : false,
+  "authorizationDecision" : "ALLOWED",
+  "details" : "Retrieved 1 docs; Target DOC-FIN-01 included; Latency=18.098ms",
+  "timestamp" : "2026-11-17T15:34:07.265618832Z"
+}, {
+  "testCaseId" : "TC-2",
+  "testCaseName" : "Direct Permission Revocation",
+  "scenario" : "Revoke Alice's access to DOC-FIN-01 after initial access",
+  "userId" : "alice",
+  "passed" : true,
+  "latencyMs" : 0.313104,
+  "documentsReturned" : 0,
+  "cacheHit" : false,
+  "authorizationDecision" : "REVOKED_DENIED",
+  "details" : "Initial retrieval=true, Post-revocation leak=false, Revocation strictly enforced",
+  "timestamp" : "2026-11-17T15:34:07.268133214Z"
+}, {
+  "testCaseId" : "TC-3",
+  "testCaseName" : "Dynamic Role Demotion",
+  "scenario" : "Demote Bob from Engineer (Confidential) to Intern (Internal)",
+  "userId" : "bob",
+  "passed" : true,
+  "latencyMs" : 0.270847,
+  "documentsReturned" : 0,
+  "cacheHit" : false,
+  "authorizationDecision" : "DEMOTION_DENIED",
+  "details" : "Pre-demotion access=true, Post-demotion leak=false (Clearance & role blocked)",
+  "timestamp" : "2026-11-17T15:34:07.270205396Z"
+}, {
+  "testCaseId" : "TC-4",
+  "testCaseName" : "Cached Retrieval Revalidation",
+  "scenario" : "Stale cache access after revocation on cached DOC-FIN-02",
+  "userId" : "alice",
+  "passed" : true,
+  "latencyMs" : 0.903899,
+  "documentsReturned" : 0,
+  "cacheHit" : true,
+  "authorizationDecision" : "CACHE_REVAL_DENIED",
+  "details" : "CacheHit=true, LeakedFromCache=false (Zero stale leakage after revocation)",
+  "timestamp" : "2026-11-17T15:34:07.272159425Z"
+}, {
+  "testCaseId" : "TC-5",
+  "testCaseName" : "Multi-Attribute Metadata Filtering",
+  "scenario" : "Cross-department query: Bob (Engineering) searches strategy",
+  "userId" : "bob",
+  "passed" : true,
+  "latencyMs" : 0.269544,
+  "documentsReturned" : 0,
+  "cacheHit" : false,
+  "authorizationDecision" : "ISOLATION_ENFORCED",
+  "details" : "FinanceLeaked=false, HrLeaked=false, RestrictedLeaked=false (Isolation valid)",
+  "timestamp" : "2026-11-17T15:34:07.273176086Z"
+}, {
+  "testCaseId" : "TC-6",
+  "testCaseName" : "Zero-Privilege Unauthorized Denial",
+  "scenario" : "Eve (Guest) attempts to retrieve confidential financial forecasts",
+  "userId" : "eve",
+  "passed" : true,
+  "latencyMs" : 0.200443,
+  "documentsReturned" : 0,
+  "cacheHit" : false,
+  "authorizationDecision" : "STRICT_DENIAL",
+  "details" : "Documents returned=0; AuditDecisionsCount=0; Denial reasons logged",
+  "timestamp" : "2026-11-17T15:34:07.273546147Z"
+} ]
