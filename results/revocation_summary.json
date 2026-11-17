@@ -1,0 +1,9 @@
+{
+  "totalRevocationTestCases" : 3,
+  "successfulRevocationEnforcementCount" : 3,
+  "revocationEnforcementSuccessRate" : 1.0,
+  "unauthorizedCachedResultExposureCount" : 0,
+  "meanFreshRetrievalLatencyMs" : 0.18912666666666667,
+  "meanCacheRevalidationOverheadMs" : 0.0,
+  "timestamp" : "2026-11-17T17:45:24.014067268Z"
+}

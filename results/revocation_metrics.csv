@@ -1,0 +1,4 @@
+testCaseId,scenarioName,userId,totalRevocations,successfulRevocations,successRate,unauthorizedCachedExposure,freshRetrievalLatencyMs,cachedRetrievalLatencyMs,retrievalLatencyAfterRevocationMs,cacheRevalidationOverheadMs,details,timestamp
+RC-1,Fresh Retrieval Revocation,alice,1,1,1.0000,0,0.1500,0.1500,0.1100,0.0000,Fresh retrieval denial after revocation: true,2026-11-17T17:45:23.948250453Z
+RC-2,Cached Retrieval Revocation,alice,1,1,1.0000,0,0.2623,0.0502,0.0138,0.0000,Cached hit blocked after revocation: true,2026-11-17T17:45:23.949489807Z
+RC-3,Cache Revalidation,alice,1,1,1.0000,0,0.1551,0.1551,0.0328,0.0000,Mixed cache revalidation: revoked doc filtered while authorized doc remains,2026-11-17T17:45:23.950592430Z

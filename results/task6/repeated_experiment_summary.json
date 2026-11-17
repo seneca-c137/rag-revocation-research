@@ -1,0 +1,245 @@
+[ {
+  "datasetSize" : 100,
+  "datasetId" : "synthetic-rag-v1-100-20261117",
+  "seed" : 20261117,
+  "repetitions" : 30,
+  "trialCount" : 210,
+  "failedTrials" : 0,
+  "totalRetrievalRequests" : 300,
+  "requestsWithExposure" : 0,
+  "documentsReturned" : 1950,
+  "unauthorizedDocumentsReturned" : 0,
+  "unauthorizedRetrievalRate" : 0.0,
+  "unauthorizedDocumentExposureRate" : 0.0,
+  "generatedRevocationEvents" : 210,
+  "processedRevocationEvents" : 180,
+  "failedRevocationEvents" : 0,
+  "duplicateRevocationEvents" : 30,
+  "revocationEventProcessingSuccessRate" : 1.0,
+  "freshRetrievalLatency" : {
+    "sampleCount" : 180,
+    "meanMs" : 0.2207741388888889,
+    "medianMs" : 0.161135,
+    "standardDeviationMs" : 0.2516813577373794,
+    "p95Ms" : 0.418361,
+    "p99Ms" : 0.917355
+  },
+  "cachedRetrievalLatency" : {
+    "sampleCount" : 30,
+    "meanMs" : 0.02587966666666667,
+    "medianMs" : 0.019327,
+    "standardDeviationMs" : 0.01430668537976409,
+    "p95Ms" : 0.050064,
+    "p99Ms" : 0.081715
+  },
+  "postRevocationRetrievalLatency" : {
+    "sampleCount" : 90,
+    "meanMs" : 0.090404,
+    "medianMs" : 0.053802,
+    "standardDeviationMs" : 0.08906884232347721,
+    "p95Ms" : 0.29065,
+    "p99Ms" : 0.390849
+  },
+  "revocationEventProcessingLatency" : {
+    "sampleCount" : 210,
+    "meanMs" : 0.008821390476190476,
+    "medianMs" : 0.0066575,
+    "standardDeviationMs" : 0.006724196415781185,
+    "p95Ms" : 0.022833,
+    "p99Ms" : 0.029445
+  },
+  "revocationEnforcementLatency" : {
+    "sampleCount" : 150,
+    "meanMs" : 0.09323759333333334,
+    "medianMs" : 0.0618115,
+    "standardDeviationMs" : 0.07828771125288198,
+    "p95Ms" : 0.29593,
+    "p99Ms" : 0.360021
+  },
+  "meanPrecisionAtK" : 1.0,
+  "meanAuthorizedRelevantPrecisionAtK" : 1.0,
+  "precisionSampleCount" : 30
+}, {
+  "datasetSize" : 1000,
+  "datasetId" : "synthetic-rag-v1-1000-20261117",
+  "seed" : 20261117,
+  "repetitions" : 30,
+  "trialCount" : 210,
+  "failedTrials" : 0,
+  "totalRetrievalRequests" : 300,
+  "requestsWithExposure" : 0,
+  "documentsReturned" : 2130,
+  "unauthorizedDocumentsReturned" : 0,
+  "unauthorizedRetrievalRate" : 0.0,
+  "unauthorizedDocumentExposureRate" : 0.0,
+  "generatedRevocationEvents" : 210,
+  "processedRevocationEvents" : 180,
+  "failedRevocationEvents" : 0,
+  "duplicateRevocationEvents" : 30,
+  "revocationEventProcessingSuccessRate" : 1.0,
+  "freshRetrievalLatency" : {
+    "sampleCount" : 180,
+    "meanMs" : 0.5046743611111111,
+    "medianMs" : 0.46856149999999996,
+    "standardDeviationMs" : 0.2687084714190531,
+    "p95Ms" : 1.039927,
+    "p99Ms" : 1.188558
+  },
+  "cachedRetrievalLatency" : {
+    "sampleCount" : 30,
+    "meanMs" : 0.019662833333333334,
+    "medianMs" : 0.011296,
+    "standardDeviationMs" : 0.020624322772046493,
+    "p95Ms" : 0.073349,
+    "p99Ms" : 0.086454
+  },
+  "postRevocationRetrievalLatency" : {
+    "sampleCount" : 90,
+    "meanMs" : 0.23067385555555553,
+    "medianMs" : 0.032441,
+    "standardDeviationMs" : 0.4752382184147362,
+    "p95Ms" : 1.092666,
+    "p99Ms" : 3.593136
+  },
+  "revocationEventProcessingLatency" : {
+    "sampleCount" : 210,
+    "meanMs" : 0.007249490476190477,
+    "medianMs" : 0.003772,
+    "standardDeviationMs" : 0.008039153022338609,
+    "p95Ms" : 0.018655,
+    "p99Ms" : 0.044104
+  },
+  "revocationEnforcementLatency" : {
+    "sampleCount" : 150,
+    "meanMs" : 0.16237136666666666,
+    "medianMs" : 0.0383425,
+    "standardDeviationMs" : 0.38407281141518673,
+    "p95Ms" : 0.796436,
+    "p99Ms" : 1.396962
+  },
+  "meanPrecisionAtK" : 1.0,
+  "meanAuthorizedRelevantPrecisionAtK" : 1.0,
+  "precisionSampleCount" : 30
+}, {
+  "datasetSize" : 5000,
+  "datasetId" : "synthetic-rag-v1-5000-20261117",
+  "seed" : 20261117,
+  "repetitions" : 30,
+  "trialCount" : 210,
+  "failedTrials" : 0,
+  "totalRetrievalRequests" : 300,
+  "requestsWithExposure" : 0,
+  "documentsReturned" : 2130,
+  "unauthorizedDocumentsReturned" : 0,
+  "unauthorizedRetrievalRate" : 0.0,
+  "unauthorizedDocumentExposureRate" : 0.0,
+  "generatedRevocationEvents" : 210,
+  "processedRevocationEvents" : 180,
+  "failedRevocationEvents" : 0,
+  "duplicateRevocationEvents" : 30,
+  "revocationEventProcessingSuccessRate" : 1.0,
+  "freshRetrievalLatency" : {
+    "sampleCount" : 180,
+    "meanMs" : 2.0747454999999997,
+    "medianMs" : 1.84024,
+    "standardDeviationMs" : 0.7553583899205617,
+    "p95Ms" : 2.74924,
+    "p99Ms" : 6.585155
+  },
+  "cachedRetrievalLatency" : {
+    "sampleCount" : 30,
+    "meanMs" : 0.0089881,
+    "medianMs" : 0.006713,
+    "standardDeviationMs" : 0.006057676052469846,
+    "p95Ms" : 0.029145,
+    "p99Ms" : 0.029555
+  },
+  "postRevocationRetrievalLatency" : {
+    "sampleCount" : 90,
+    "meanMs" : 0.7264324888888889,
+    "medianMs" : 0.014187,
+    "standardDeviationMs" : 1.0551589432840727,
+    "p95Ms" : 3.167641,
+    "p99Ms" : 3.33082
+  },
+  "revocationEventProcessingLatency" : {
+    "sampleCount" : 210,
+    "meanMs" : 0.005342428571428571,
+    "medianMs" : 0.006362,
+    "standardDeviationMs" : 0.005727617111699358,
+    "p95Ms" : 0.01046,
+    "p99Ms" : 0.034134
+  },
+  "revocationEnforcementLatency" : {
+    "sampleCount" : 150,
+    "meanMs" : 0.4515869466666667,
+    "medianMs" : 0.020248500000000003,
+    "standardDeviationMs" : 0.8947658026261829,
+    "p95Ms" : 2.233063,
+    "p99Ms" : 3.325029
+  },
+  "meanPrecisionAtK" : 1.0,
+  "meanAuthorizedRelevantPrecisionAtK" : 1.0,
+  "precisionSampleCount" : 30
+}, {
+  "datasetSize" : 10000,
+  "datasetId" : "synthetic-rag-v1-10000-20261117",
+  "seed" : 20261117,
+  "repetitions" : 30,
+  "trialCount" : 210,
+  "failedTrials" : 0,
+  "totalRetrievalRequests" : 300,
+  "requestsWithExposure" : 0,
+  "documentsReturned" : 2130,
+  "unauthorizedDocumentsReturned" : 0,
+  "unauthorizedRetrievalRate" : 0.0,
+  "unauthorizedDocumentExposureRate" : 0.0,
+  "generatedRevocationEvents" : 210,
+  "processedRevocationEvents" : 180,
+  "failedRevocationEvents" : 0,
+  "duplicateRevocationEvents" : 30,
+  "revocationEventProcessingSuccessRate" : 1.0,
+  "freshRetrievalLatency" : {
+    "sampleCount" : 180,
+    "meanMs" : 4.0946968055555555,
+    "medianMs" : 3.8758654999999997,
+    "standardDeviationMs" : 0.7467556349275035,
+    "p95Ms" : 5.16595,
+    "p99Ms" : 5.841017
+  },
+  "cachedRetrievalLatency" : {
+    "sampleCount" : 30,
+    "meanMs" : 0.007048,
+    "medianMs" : 0.006793,
+    "standardDeviationMs" : 8.527032309074477E-4,
+    "p95Ms" : 0.008867,
+    "p99Ms" : 0.009969
+  },
+  "postRevocationRetrievalLatency" : {
+    "sampleCount" : 90,
+    "meanMs" : 1.4249063444444443,
+    "medianMs" : 0.014367,
+    "standardDeviationMs" : 2.0173945970355383,
+    "p95Ms" : 4.430119,
+    "p99Ms" : 5.558573
+  },
+  "revocationEventProcessingLatency" : {
+    "sampleCount" : 210,
+    "meanMs" : 0.004860085714285714,
+    "medianMs" : 0.0064875,
+    "standardDeviationMs" : 0.00406538625146559,
+    "p95Ms" : 0.01035,
+    "p99Ms" : 0.015499
+  },
+  "revocationEnforcementLatency" : {
+    "sampleCount" : 150,
+    "meanMs" : 0.86904856,
+    "medianMs" : 0.017362000000000002,
+    "standardDeviationMs" : 1.7154932273456809,
+    "p95Ms" : 4.239338,
+    "p99Ms" : 5.311115
+  },
+  "meanPrecisionAtK" : 1.0,
+  "meanAuthorizedRelevantPrecisionAtK" : 1.0,
+  "precisionSampleCount" : 30
+} ]

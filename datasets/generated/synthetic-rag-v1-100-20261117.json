@@ -1,0 +1,1288 @@
+{
+  "metadata" : {
+    "datasetId" : "synthetic-rag-v1-100-20261117",
+    "documentCount" : 100,
+    "seed" : 20261117,
+    "userCount" : 6,
+    "queryCount" : 6,
+    "generatorVersion" : "synthetic-rag-v1",
+    "relevanceRule" : "A document is relevant exactly when its generated topic ID matches the query topic ID; permissions are not consulted."
+  },
+  "documents" : [ {
+    "documentId" : "SYN-DOC-00001",
+    "title" : "FINANCE record 00001",
+    "content" : "treasury dividend ledger. A simulated corporate finance record. Synthetic record number 1 from seed 20261117.",
+    "department" : "FINANCE",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_FINANCE_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "FINANCE"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00002",
+    "title" : "ENGINEERING record 00002",
+    "content" : "compiler kernel protocol. A simulated software engineering record. Synthetic record number 2 from seed 20261117.",
+    "department" : "ENGINEERING",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_ENGINEER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "ENGINEERING"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00003",
+    "title" : "HUMAN RESOURCES record 00003",
+    "content" : "onboarding benefits payroll. A simulated human resources record. Synthetic record number 3 from seed 20261117.",
+    "department" : "HR",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_HR_MANAGER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "HUMAN_RESOURCES"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00004",
+    "title" : "LEGAL record 00004",
+    "content" : "statute litigation contract. A simulated legal affairs record. Synthetic record number 4 from seed 20261117.",
+    "department" : "LEGAL",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_LEGAL_COUNSEL" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "LEGAL"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00005",
+    "title" : "SECURITY record 00005",
+    "content" : "cipher credential threat. A simulated information security record. Synthetic record number 5 from seed 20261117.",
+    "department" : "SECURITY",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_SECURITY_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "SECURITY"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00006",
+    "title" : "RESEARCH record 00006",
+    "content" : "genomics telescope climate. A simulated scientific research record. Synthetic record number 6 from seed 20261117.",
+    "department" : "RESEARCH",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_RESEARCHER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "RESEARCH"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00007",
+    "title" : "FINANCE record 00007",
+    "content" : "treasury dividend ledger. A simulated corporate finance record. Synthetic record number 7 from seed 20261117.",
+    "department" : "FINANCE",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_FINANCE_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "FINANCE"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00008",
+    "title" : "ENGINEERING record 00008",
+    "content" : "compiler kernel protocol. A simulated software engineering record. Synthetic record number 8 from seed 20261117.",
+    "department" : "ENGINEERING",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_ENGINEER" ],
+    "allowedUsers" : [ "dataset-user-engineering" ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "ENGINEERING"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00009",
+    "title" : "HUMAN RESOURCES record 00009",
+    "content" : "onboarding benefits payroll. A simulated human resources record. Synthetic record number 9 from seed 20261117.",
+    "department" : "HR",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_HR_MANAGER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "HUMAN_RESOURCES"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00010",
+    "title" : "LEGAL record 00010",
+    "content" : "statute litigation contract. A simulated legal affairs record. Synthetic record number 10 from seed 20261117.",
+    "department" : "LEGAL",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_LEGAL_COUNSEL" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "LEGAL"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00011",
+    "title" : "SECURITY record 00011",
+    "content" : "cipher credential threat. A simulated information security record. Synthetic record number 11 from seed 20261117.",
+    "department" : "SECURITY",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_SECURITY_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "SECURITY"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00012",
+    "title" : "RESEARCH record 00012",
+    "content" : "genomics telescope climate. A simulated scientific research record. Synthetic record number 12 from seed 20261117.",
+    "department" : "RESEARCH",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_RESEARCHER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "RESEARCH"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00013",
+    "title" : "FINANCE record 00013",
+    "content" : "treasury dividend ledger. A simulated corporate finance record. Synthetic record number 13 from seed 20261117.",
+    "department" : "FINANCE",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_FINANCE_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "FINANCE"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00014",
+    "title" : "ENGINEERING record 00014",
+    "content" : "compiler kernel protocol. A simulated software engineering record. Synthetic record number 14 from seed 20261117.",
+    "department" : "ENGINEERING",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_ENGINEER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "ENGINEERING"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00015",
+    "title" : "HUMAN RESOURCES record 00015",
+    "content" : "onboarding benefits payroll. A simulated human resources record. Synthetic record number 15 from seed 20261117.",
+    "department" : "HR",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_HR_MANAGER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "HUMAN_RESOURCES"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00016",
+    "title" : "LEGAL record 00016",
+    "content" : "statute litigation contract. A simulated legal affairs record. Synthetic record number 16 from seed 20261117.",
+    "department" : "LEGAL",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_LEGAL_COUNSEL" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "LEGAL"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00017",
+    "title" : "SECURITY record 00017",
+    "content" : "cipher credential threat. A simulated information security record. Synthetic record number 17 from seed 20261117.",
+    "department" : "SECURITY",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_SECURITY_ANALYST" ],
+    "allowedUsers" : [ "dataset-user-security" ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "SECURITY"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00018",
+    "title" : "RESEARCH record 00018",
+    "content" : "genomics telescope climate. A simulated scientific research record. Synthetic record number 18 from seed 20261117.",
+    "department" : "RESEARCH",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_RESEARCHER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "RESEARCH"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00019",
+    "title" : "FINANCE record 00019",
+    "content" : "treasury dividend ledger. A simulated corporate finance record. Synthetic record number 19 from seed 20261117.",
+    "department" : "FINANCE",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_FINANCE_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "FINANCE"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00020",
+    "title" : "ENGINEERING record 00020",
+    "content" : "compiler kernel protocol. A simulated software engineering record. Synthetic record number 20 from seed 20261117.",
+    "department" : "ENGINEERING",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_ENGINEER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "ENGINEERING"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00021",
+    "title" : "HUMAN RESOURCES record 00021",
+    "content" : "onboarding benefits payroll. A simulated human resources record. Synthetic record number 21 from seed 20261117.",
+    "department" : "HR",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_HR_MANAGER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "HUMAN_RESOURCES"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00022",
+    "title" : "LEGAL record 00022",
+    "content" : "statute litigation contract. A simulated legal affairs record. Synthetic record number 22 from seed 20261117.",
+    "department" : "LEGAL",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_LEGAL_COUNSEL" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "LEGAL"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00023",
+    "title" : "SECURITY record 00023",
+    "content" : "cipher credential threat. A simulated information security record. Synthetic record number 23 from seed 20261117.",
+    "department" : "SECURITY",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_SECURITY_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "SECURITY"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00024",
+    "title" : "RESEARCH record 00024",
+    "content" : "genomics telescope climate. A simulated scientific research record. Synthetic record number 24 from seed 20261117.",
+    "department" : "RESEARCH",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_RESEARCHER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "RESEARCH"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00025",
+    "title" : "FINANCE record 00025",
+    "content" : "treasury dividend ledger. A simulated corporate finance record. Synthetic record number 25 from seed 20261117.",
+    "department" : "FINANCE",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_FINANCE_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "FINANCE"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00026",
+    "title" : "ENGINEERING record 00026",
+    "content" : "compiler kernel protocol. A simulated software engineering record. Synthetic record number 26 from seed 20261117.",
+    "department" : "ENGINEERING",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_ENGINEER" ],
+    "allowedUsers" : [ "dataset-user-engineering" ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "ENGINEERING"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00027",
+    "title" : "HUMAN RESOURCES record 00027",
+    "content" : "onboarding benefits payroll. A simulated human resources record. Synthetic record number 27 from seed 20261117.",
+    "department" : "HR",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_HR_MANAGER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "HUMAN_RESOURCES"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00028",
+    "title" : "LEGAL record 00028",
+    "content" : "statute litigation contract. A simulated legal affairs record. Synthetic record number 28 from seed 20261117.",
+    "department" : "LEGAL",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_LEGAL_COUNSEL" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "LEGAL"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00029",
+    "title" : "SECURITY record 00029",
+    "content" : "cipher credential threat. A simulated information security record. Synthetic record number 29 from seed 20261117.",
+    "department" : "SECURITY",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_SECURITY_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "SECURITY"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00030",
+    "title" : "RESEARCH record 00030",
+    "content" : "genomics telescope climate. A simulated scientific research record. Synthetic record number 30 from seed 20261117.",
+    "department" : "RESEARCH",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_RESEARCHER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "RESEARCH"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00031",
+    "title" : "FINANCE record 00031",
+    "content" : "treasury dividend ledger. A simulated corporate finance record. Synthetic record number 31 from seed 20261117.",
+    "department" : "FINANCE",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_FINANCE_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "FINANCE"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00032",
+    "title" : "ENGINEERING record 00032",
+    "content" : "compiler kernel protocol. A simulated software engineering record. Synthetic record number 32 from seed 20261117.",
+    "department" : "ENGINEERING",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_ENGINEER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "ENGINEERING"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00033",
+    "title" : "HUMAN RESOURCES record 00033",
+    "content" : "onboarding benefits payroll. A simulated human resources record. Synthetic record number 33 from seed 20261117.",
+    "department" : "HR",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_HR_MANAGER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "HUMAN_RESOURCES"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00034",
+    "title" : "LEGAL record 00034",
+    "content" : "statute litigation contract. A simulated legal affairs record. Synthetic record number 34 from seed 20261117.",
+    "department" : "LEGAL",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_LEGAL_COUNSEL" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "LEGAL"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00035",
+    "title" : "SECURITY record 00035",
+    "content" : "cipher credential threat. A simulated information security record. Synthetic record number 35 from seed 20261117.",
+    "department" : "SECURITY",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_SECURITY_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "SECURITY"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00036",
+    "title" : "RESEARCH record 00036",
+    "content" : "genomics telescope climate. A simulated scientific research record. Synthetic record number 36 from seed 20261117.",
+    "department" : "RESEARCH",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_RESEARCHER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "RESEARCH"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00037",
+    "title" : "FINANCE record 00037",
+    "content" : "treasury dividend ledger. A simulated corporate finance record. Synthetic record number 37 from seed 20261117.",
+    "department" : "FINANCE",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_FINANCE_ANALYST" ],
+    "allowedUsers" : [ "dataset-user-finance" ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "FINANCE"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00038",
+    "title" : "ENGINEERING record 00038",
+    "content" : "compiler kernel protocol. A simulated software engineering record. Synthetic record number 38 from seed 20261117.",
+    "department" : "ENGINEERING",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_ENGINEER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "ENGINEERING"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00039",
+    "title" : "HUMAN RESOURCES record 00039",
+    "content" : "onboarding benefits payroll. A simulated human resources record. Synthetic record number 39 from seed 20261117.",
+    "department" : "HR",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_HR_MANAGER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "HUMAN_RESOURCES"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00040",
+    "title" : "LEGAL record 00040",
+    "content" : "statute litigation contract. A simulated legal affairs record. Synthetic record number 40 from seed 20261117.",
+    "department" : "LEGAL",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_LEGAL_COUNSEL" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "LEGAL"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00041",
+    "title" : "SECURITY record 00041",
+    "content" : "cipher credential threat. A simulated information security record. Synthetic record number 41 from seed 20261117.",
+    "department" : "SECURITY",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_SECURITY_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "SECURITY"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00042",
+    "title" : "RESEARCH record 00042",
+    "content" : "genomics telescope climate. A simulated scientific research record. Synthetic record number 42 from seed 20261117.",
+    "department" : "RESEARCH",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_RESEARCHER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "RESEARCH"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00043",
+    "title" : "FINANCE record 00043",
+    "content" : "treasury dividend ledger. A simulated corporate finance record. Synthetic record number 43 from seed 20261117.",
+    "department" : "FINANCE",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_FINANCE_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "FINANCE"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00044",
+    "title" : "ENGINEERING record 00044",
+    "content" : "compiler kernel protocol. A simulated software engineering record. Synthetic record number 44 from seed 20261117.",
+    "department" : "ENGINEERING",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_ENGINEER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "ENGINEERING"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00045",
+    "title" : "HUMAN RESOURCES record 00045",
+    "content" : "onboarding benefits payroll. A simulated human resources record. Synthetic record number 45 from seed 20261117.",
+    "department" : "HR",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_HR_MANAGER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "HUMAN_RESOURCES"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00046",
+    "title" : "LEGAL record 00046",
+    "content" : "statute litigation contract. A simulated legal affairs record. Synthetic record number 46 from seed 20261117.",
+    "department" : "LEGAL",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_LEGAL_COUNSEL" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "LEGAL"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00047",
+    "title" : "SECURITY record 00047",
+    "content" : "cipher credential threat. A simulated information security record. Synthetic record number 47 from seed 20261117.",
+    "department" : "SECURITY",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_SECURITY_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "SECURITY"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00048",
+    "title" : "RESEARCH record 00048",
+    "content" : "genomics telescope climate. A simulated scientific research record. Synthetic record number 48 from seed 20261117.",
+    "department" : "RESEARCH",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_RESEARCHER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "RESEARCH"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00049",
+    "title" : "FINANCE record 00049",
+    "content" : "treasury dividend ledger. A simulated corporate finance record. Synthetic record number 49 from seed 20261117.",
+    "department" : "FINANCE",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_FINANCE_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "FINANCE"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00050",
+    "title" : "ENGINEERING record 00050",
+    "content" : "compiler kernel protocol. A simulated software engineering record. Synthetic record number 50 from seed 20261117.",
+    "department" : "ENGINEERING",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_ENGINEER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "ENGINEERING"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00051",
+    "title" : "HUMAN RESOURCES record 00051",
+    "content" : "onboarding benefits payroll. A simulated human resources record. Synthetic record number 51 from seed 20261117.",
+    "department" : "HR",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_HR_MANAGER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "HUMAN_RESOURCES"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00052",
+    "title" : "LEGAL record 00052",
+    "content" : "statute litigation contract. A simulated legal affairs record. Synthetic record number 52 from seed 20261117.",
+    "department" : "LEGAL",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_LEGAL_COUNSEL" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "LEGAL"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00053",
+    "title" : "SECURITY record 00053",
+    "content" : "cipher credential threat. A simulated information security record. Synthetic record number 53 from seed 20261117.",
+    "department" : "SECURITY",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_SECURITY_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "SECURITY"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00054",
+    "title" : "RESEARCH record 00054",
+    "content" : "genomics telescope climate. A simulated scientific research record. Synthetic record number 54 from seed 20261117.",
+    "department" : "RESEARCH",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_RESEARCHER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "RESEARCH"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00055",
+    "title" : "FINANCE record 00055",
+    "content" : "treasury dividend ledger. A simulated corporate finance record. Synthetic record number 55 from seed 20261117.",
+    "department" : "FINANCE",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_FINANCE_ANALYST" ],
+    "allowedUsers" : [ "dataset-user-finance" ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "FINANCE"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00056",
+    "title" : "ENGINEERING record 00056",
+    "content" : "compiler kernel protocol. A simulated software engineering record. Synthetic record number 56 from seed 20261117.",
+    "department" : "ENGINEERING",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_ENGINEER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "ENGINEERING"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00057",
+    "title" : "HUMAN RESOURCES record 00057",
+    "content" : "onboarding benefits payroll. A simulated human resources record. Synthetic record number 57 from seed 20261117.",
+    "department" : "HR",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_HR_MANAGER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "HUMAN_RESOURCES"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00058",
+    "title" : "LEGAL record 00058",
+    "content" : "statute litigation contract. A simulated legal affairs record. Synthetic record number 58 from seed 20261117.",
+    "department" : "LEGAL",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_LEGAL_COUNSEL" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "LEGAL"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00059",
+    "title" : "SECURITY record 00059",
+    "content" : "cipher credential threat. A simulated information security record. Synthetic record number 59 from seed 20261117.",
+    "department" : "SECURITY",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_SECURITY_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "SECURITY"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00060",
+    "title" : "RESEARCH record 00060",
+    "content" : "genomics telescope climate. A simulated scientific research record. Synthetic record number 60 from seed 20261117.",
+    "department" : "RESEARCH",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_RESEARCHER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "RESEARCH"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00061",
+    "title" : "FINANCE record 00061",
+    "content" : "treasury dividend ledger. A simulated corporate finance record. Synthetic record number 61 from seed 20261117.",
+    "department" : "FINANCE",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_FINANCE_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "FINANCE"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00062",
+    "title" : "ENGINEERING record 00062",
+    "content" : "compiler kernel protocol. A simulated software engineering record. Synthetic record number 62 from seed 20261117.",
+    "department" : "ENGINEERING",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_ENGINEER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "ENGINEERING"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00063",
+    "title" : "HUMAN RESOURCES record 00063",
+    "content" : "onboarding benefits payroll. A simulated human resources record. Synthetic record number 63 from seed 20261117.",
+    "department" : "HR",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_HR_MANAGER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "HUMAN_RESOURCES"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00064",
+    "title" : "LEGAL record 00064",
+    "content" : "statute litigation contract. A simulated legal affairs record. Synthetic record number 64 from seed 20261117.",
+    "department" : "LEGAL",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_LEGAL_COUNSEL" ],
+    "allowedUsers" : [ "dataset-user-legal" ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "LEGAL"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00065",
+    "title" : "SECURITY record 00065",
+    "content" : "cipher credential threat. A simulated information security record. Synthetic record number 65 from seed 20261117.",
+    "department" : "SECURITY",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_SECURITY_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "SECURITY"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00066",
+    "title" : "RESEARCH record 00066",
+    "content" : "genomics telescope climate. A simulated scientific research record. Synthetic record number 66 from seed 20261117.",
+    "department" : "RESEARCH",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_RESEARCHER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "RESEARCH"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00067",
+    "title" : "FINANCE record 00067",
+    "content" : "treasury dividend ledger. A simulated corporate finance record. Synthetic record number 67 from seed 20261117.",
+    "department" : "FINANCE",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_FINANCE_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "FINANCE"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00068",
+    "title" : "ENGINEERING record 00068",
+    "content" : "compiler kernel protocol. A simulated software engineering record. Synthetic record number 68 from seed 20261117.",
+    "department" : "ENGINEERING",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_ENGINEER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "ENGINEERING"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00069",
+    "title" : "HUMAN RESOURCES record 00069",
+    "content" : "onboarding benefits payroll. A simulated human resources record. Synthetic record number 69 from seed 20261117.",
+    "department" : "HR",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_HR_MANAGER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "HUMAN_RESOURCES"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00070",
+    "title" : "LEGAL record 00070",
+    "content" : "statute litigation contract. A simulated legal affairs record. Synthetic record number 70 from seed 20261117.",
+    "department" : "LEGAL",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_LEGAL_COUNSEL" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "LEGAL"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00071",
+    "title" : "SECURITY record 00071",
+    "content" : "cipher credential threat. A simulated information security record. Synthetic record number 71 from seed 20261117.",
+    "department" : "SECURITY",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_SECURITY_ANALYST" ],
+    "allowedUsers" : [ "dataset-user-security" ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "SECURITY"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00072",
+    "title" : "RESEARCH record 00072",
+    "content" : "genomics telescope climate. A simulated scientific research record. Synthetic record number 72 from seed 20261117.",
+    "department" : "RESEARCH",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_RESEARCHER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "RESEARCH"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00073",
+    "title" : "FINANCE record 00073",
+    "content" : "treasury dividend ledger. A simulated corporate finance record. Synthetic record number 73 from seed 20261117.",
+    "department" : "FINANCE",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_FINANCE_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "FINANCE"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00074",
+    "title" : "ENGINEERING record 00074",
+    "content" : "compiler kernel protocol. A simulated software engineering record. Synthetic record number 74 from seed 20261117.",
+    "department" : "ENGINEERING",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_ENGINEER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "ENGINEERING"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00075",
+    "title" : "HUMAN RESOURCES record 00075",
+    "content" : "onboarding benefits payroll. A simulated human resources record. Synthetic record number 75 from seed 20261117.",
+    "department" : "HR",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_HR_MANAGER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "HUMAN_RESOURCES"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00076",
+    "title" : "LEGAL record 00076",
+    "content" : "statute litigation contract. A simulated legal affairs record. Synthetic record number 76 from seed 20261117.",
+    "department" : "LEGAL",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_LEGAL_COUNSEL" ],
+    "allowedUsers" : [ "dataset-user-legal" ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "LEGAL"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00077",
+    "title" : "SECURITY record 00077",
+    "content" : "cipher credential threat. A simulated information security record. Synthetic record number 77 from seed 20261117.",
+    "department" : "SECURITY",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_SECURITY_ANALYST" ],
+    "allowedUsers" : [ "dataset-user-security" ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "SECURITY"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00078",
+    "title" : "RESEARCH record 00078",
+    "content" : "genomics telescope climate. A simulated scientific research record. Synthetic record number 78 from seed 20261117.",
+    "department" : "RESEARCH",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_RESEARCHER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "RESEARCH"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00079",
+    "title" : "FINANCE record 00079",
+    "content" : "treasury dividend ledger. A simulated corporate finance record. Synthetic record number 79 from seed 20261117.",
+    "department" : "FINANCE",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_FINANCE_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "FINANCE"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00080",
+    "title" : "ENGINEERING record 00080",
+    "content" : "compiler kernel protocol. A simulated software engineering record. Synthetic record number 80 from seed 20261117.",
+    "department" : "ENGINEERING",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_ENGINEER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "ENGINEERING"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00081",
+    "title" : "HUMAN RESOURCES record 00081",
+    "content" : "onboarding benefits payroll. A simulated human resources record. Synthetic record number 81 from seed 20261117.",
+    "department" : "HR",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_HR_MANAGER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "HUMAN_RESOURCES"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00082",
+    "title" : "LEGAL record 00082",
+    "content" : "statute litigation contract. A simulated legal affairs record. Synthetic record number 82 from seed 20261117.",
+    "department" : "LEGAL",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_LEGAL_COUNSEL" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "LEGAL"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00083",
+    "title" : "SECURITY record 00083",
+    "content" : "cipher credential threat. A simulated information security record. Synthetic record number 83 from seed 20261117.",
+    "department" : "SECURITY",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_SECURITY_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "SECURITY"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00084",
+    "title" : "RESEARCH record 00084",
+    "content" : "genomics telescope climate. A simulated scientific research record. Synthetic record number 84 from seed 20261117.",
+    "department" : "RESEARCH",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_RESEARCHER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "RESEARCH"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00085",
+    "title" : "FINANCE record 00085",
+    "content" : "treasury dividend ledger. A simulated corporate finance record. Synthetic record number 85 from seed 20261117.",
+    "department" : "FINANCE",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_FINANCE_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "FINANCE"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00086",
+    "title" : "ENGINEERING record 00086",
+    "content" : "compiler kernel protocol. A simulated software engineering record. Synthetic record number 86 from seed 20261117.",
+    "department" : "ENGINEERING",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_ENGINEER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "ENGINEERING"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00087",
+    "title" : "HUMAN RESOURCES record 00087",
+    "content" : "onboarding benefits payroll. A simulated human resources record. Synthetic record number 87 from seed 20261117.",
+    "department" : "HR",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_HR_MANAGER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "HUMAN_RESOURCES"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00088",
+    "title" : "LEGAL record 00088",
+    "content" : "statute litigation contract. A simulated legal affairs record. Synthetic record number 88 from seed 20261117.",
+    "department" : "LEGAL",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_LEGAL_COUNSEL" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "LEGAL"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00089",
+    "title" : "SECURITY record 00089",
+    "content" : "cipher credential threat. A simulated information security record. Synthetic record number 89 from seed 20261117.",
+    "department" : "SECURITY",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_SECURITY_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "SECURITY"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00090",
+    "title" : "RESEARCH record 00090",
+    "content" : "genomics telescope climate. A simulated scientific research record. Synthetic record number 90 from seed 20261117.",
+    "department" : "RESEARCH",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_RESEARCHER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "RESEARCH"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00091",
+    "title" : "FINANCE record 00091",
+    "content" : "treasury dividend ledger. A simulated corporate finance record. Synthetic record number 91 from seed 20261117.",
+    "department" : "FINANCE",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_FINANCE_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "FINANCE"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00092",
+    "title" : "ENGINEERING record 00092",
+    "content" : "compiler kernel protocol. A simulated software engineering record. Synthetic record number 92 from seed 20261117.",
+    "department" : "ENGINEERING",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_ENGINEER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "ENGINEERING"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00093",
+    "title" : "HUMAN RESOURCES record 00093",
+    "content" : "onboarding benefits payroll. A simulated human resources record. Synthetic record number 93 from seed 20261117.",
+    "department" : "HR",
+    "classificationLevel" : "RESTRICTED",
+    "allowedRoles" : [ "ROLE_HR_MANAGER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "HUMAN_RESOURCES"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00094",
+    "title" : "LEGAL record 00094",
+    "content" : "statute litigation contract. A simulated legal affairs record. Synthetic record number 94 from seed 20261117.",
+    "department" : "LEGAL",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_LEGAL_COUNSEL" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "LEGAL"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00095",
+    "title" : "SECURITY record 00095",
+    "content" : "cipher credential threat. A simulated information security record. Synthetic record number 95 from seed 20261117.",
+    "department" : "SECURITY",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_SECURITY_ANALYST" ],
+    "allowedUsers" : [ "dataset-user-security" ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "SECURITY"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00096",
+    "title" : "RESEARCH record 00096",
+    "content" : "genomics telescope climate. A simulated scientific research record. Synthetic record number 96 from seed 20261117.",
+    "department" : "RESEARCH",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_RESEARCHER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "RESEARCH"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00097",
+    "title" : "FINANCE record 00097",
+    "content" : "treasury dividend ledger. A simulated corporate finance record. Synthetic record number 97 from seed 20261117.",
+    "department" : "FINANCE",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_FINANCE_ANALYST" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "FINANCE"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00098",
+    "title" : "ENGINEERING record 00098",
+    "content" : "compiler kernel protocol. A simulated software engineering record. Synthetic record number 98 from seed 20261117.",
+    "department" : "ENGINEERING",
+    "classificationLevel" : "INTERNAL",
+    "allowedRoles" : [ "ROLE_ENGINEER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "ENGINEERING"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00099",
+    "title" : "HUMAN RESOURCES record 00099",
+    "content" : "onboarding benefits payroll. A simulated human resources record. Synthetic record number 99 from seed 20261117.",
+    "department" : "HR",
+    "classificationLevel" : "PUBLIC",
+    "allowedRoles" : [ "ROLE_HR_MANAGER" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "HUMAN_RESOURCES"
+    }
+  }, {
+    "documentId" : "SYN-DOC-00100",
+    "title" : "LEGAL record 00100",
+    "content" : "statute litigation contract. A simulated legal affairs record. Synthetic record number 100 from seed 20261117.",
+    "department" : "LEGAL",
+    "classificationLevel" : "CONFIDENTIAL",
+    "allowedRoles" : [ "ROLE_LEGAL_COUNSEL" ],
+    "allowedUsers" : [ ],
+    "customAttributes" : {
+      "datasetSeed" : "20261117",
+      "datasetTopicId" : "LEGAL"
+    }
+  } ],
+  "users" : [ {
+    "userId" : "dataset-user-finance",
+    "name" : "Finance Analyst",
+    "department" : "FINANCE",
+    "clearanceLevel" : "CONFIDENTIAL",
+    "roles" : [ "ROLE_FINANCE_ANALYST" ],
+    "active" : true
+  }, {
+    "userId" : "dataset-user-engineering",
+    "name" : "Engineer",
+    "department" : "ENGINEERING",
+    "clearanceLevel" : "RESTRICTED",
+    "roles" : [ "ROLE_ENGINEER" ],
+    "active" : true
+  }, {
+    "userId" : "dataset-user-hr",
+    "name" : "HR Manager",
+    "department" : "HR",
+    "clearanceLevel" : "INTERNAL",
+    "roles" : [ "ROLE_HR_MANAGER" ],
+    "active" : true
+  }, {
+    "userId" : "dataset-user-legal",
+    "name" : "Legal Counsel",
+    "department" : "LEGAL",
+    "clearanceLevel" : "CONFIDENTIAL",
+    "roles" : [ "ROLE_LEGAL_COUNSEL" ],
+    "active" : true
+  }, {
+    "userId" : "dataset-user-security",
+    "name" : "Security Analyst",
+    "department" : "SECURITY",
+    "clearanceLevel" : "RESTRICTED",
+    "roles" : [ "ROLE_SECURITY_ANALYST" ],
+    "active" : true
+  }, {
+    "userId" : "dataset-user-research",
+    "name" : "Researcher",
+    "department" : "RESEARCH",
+    "clearanceLevel" : "PUBLIC",
+    "roles" : [ "ROLE_RESEARCHER" ],
+    "active" : true
+  } ],
+  "queries" : [ {
+    "queryId" : "QUERY-FINANCE",
+    "queryText" : "treasury dividend ledger",
+    "topicId" : "FINANCE"
+  }, {
+    "queryId" : "QUERY-ENGINEERING",
+    "queryText" : "compiler kernel protocol",
+    "topicId" : "ENGINEERING"
+  }, {
+    "queryId" : "QUERY-HUMAN_RESOURCES",
+    "queryText" : "onboarding benefits payroll",
+    "topicId" : "HUMAN_RESOURCES"
+  }, {
+    "queryId" : "QUERY-LEGAL",
+    "queryText" : "statute litigation contract",
+    "topicId" : "LEGAL"
+  }, {
+    "queryId" : "QUERY-SECURITY",
+    "queryText" : "cipher credential threat",
+    "topicId" : "SECURITY"
+  }, {
+    "queryId" : "QUERY-RESEARCH",
+    "queryText" : "genomics telescope climate",
+    "topicId" : "RESEARCH"
+  } ],
+  "relevanceGroundTruth" : {
+    "QUERY-FINANCE" : [ "SYN-DOC-00001", "SYN-DOC-00007", "SYN-DOC-00013", "SYN-DOC-00019", "SYN-DOC-00025", "SYN-DOC-00031", "SYN-DOC-00037", "SYN-DOC-00043", "SYN-DOC-00049", "SYN-DOC-00055", "SYN-DOC-00061", "SYN-DOC-00067", "SYN-DOC-00073", "SYN-DOC-00079", "SYN-DOC-00085", "SYN-DOC-00091", "SYN-DOC-00097" ],
+    "QUERY-ENGINEERING" : [ "SYN-DOC-00002", "SYN-DOC-00008", "SYN-DOC-00014", "SYN-DOC-00020", "SYN-DOC-00026", "SYN-DOC-00032", "SYN-DOC-00038", "SYN-DOC-00044", "SYN-DOC-00050", "SYN-DOC-00056", "SYN-DOC-00062", "SYN-DOC-00068", "SYN-DOC-00074", "SYN-DOC-00080", "SYN-DOC-00086", "SYN-DOC-00092", "SYN-DOC-00098" ],
+    "QUERY-HUMAN_RESOURCES" : [ "SYN-DOC-00003", "SYN-DOC-00009", "SYN-DOC-00015", "SYN-DOC-00021", "SYN-DOC-00027", "SYN-DOC-00033", "SYN-DOC-00039", "SYN-DOC-00045", "SYN-DOC-00051", "SYN-DOC-00057", "SYN-DOC-00063", "SYN-DOC-00069", "SYN-DOC-00075", "SYN-DOC-00081", "SYN-DOC-00087", "SYN-DOC-00093", "SYN-DOC-00099" ],
+    "QUERY-LEGAL" : [ "SYN-DOC-00004", "SYN-DOC-00010", "SYN-DOC-00016", "SYN-DOC-00022", "SYN-DOC-00028", "SYN-DOC-00034", "SYN-DOC-00040", "SYN-DOC-00046", "SYN-DOC-00052", "SYN-DOC-00058", "SYN-DOC-00064", "SYN-DOC-00070", "SYN-DOC-00076", "SYN-DOC-00082", "SYN-DOC-00088", "SYN-DOC-00094", "SYN-DOC-00100" ],
+    "QUERY-SECURITY" : [ "SYN-DOC-00005", "SYN-DOC-00011", "SYN-DOC-00017", "SYN-DOC-00023", "SYN-DOC-00029", "SYN-DOC-00035", "SYN-DOC-00041", "SYN-DOC-00047", "SYN-DOC-00053", "SYN-DOC-00059", "SYN-DOC-00065", "SYN-DOC-00071", "SYN-DOC-00077", "SYN-DOC-00083", "SYN-DOC-00089", "SYN-DOC-00095" ],
+    "QUERY-RESEARCH" : [ "SYN-DOC-00006", "SYN-DOC-00012", "SYN-DOC-00018", "SYN-DOC-00024", "SYN-DOC-00030", "SYN-DOC-00036", "SYN-DOC-00042", "SYN-DOC-00048", "SYN-DOC-00054", "SYN-DOC-00060", "SYN-DOC-00066", "SYN-DOC-00072", "SYN-DOC-00078", "SYN-DOC-00084", "SYN-DOC-00090", "SYN-DOC-00096" ]
+  }
+}

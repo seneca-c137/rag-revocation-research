@@ -1,0 +1,55 @@
+{
+  "totalRetrievalRequests" : 17,
+  "requestsReturningUnauthorizedDocuments" : 0,
+  "totalDocumentsReturned" : 11,
+  "unauthorizedDocumentsReturned" : 0,
+  "requestUnauthorizedRetrievalRate" : 0.0,
+  "documentUnauthorizedExposureRate" : 0.0,
+  "generatedRevocationEvents" : 5,
+  "processedRevocationEvents" : 5,
+  "failedRevocationEvents" : 0,
+  "duplicateRevocationEvents" : 0,
+  "successfullyHandledRevocationEvents" : 5,
+  "revocationEventProcessingSuccessRate" : 1.0,
+  "eventProcessingLatencyDefinition" : "processedAt minus generatedAt",
+  "revocationEnforcementLatencyDefinition" : "firstDeniedAt minus permissionCommittedAt",
+  "retrievalLatencyMeasurement" : "RetrievalResponse latency measured with System.nanoTime",
+  "latencyPercentileConvention" : "nearest-rank: sorted[ceil(p*n)-1]",
+  "latencyStandardDeviationConvention" : "population standard deviation",
+  "precisionAtKDenominator" : "K, including missing results when fewer than K are returned",
+  "relevanceGroundTruthSource" : "Deterministic simulated query-to-document mapping, independent of authorization decisions",
+  "simulatedRelevanceGroundTruth" : {
+    "strategy" : [ "DOC-FIN-02", "DOC-EXEC-01", "DOC-HR-01" ],
+    "finance multi" : [ "DOC-FIN-01", "DOC-FIN-02" ],
+    "financial earnings" : [ "DOC-FIN-01" ],
+    "financial earnings revenue" : [ "DOC-FIN-01" ],
+    "proprietary model weights" : [ "DOC-ENG-02" ],
+    "acquisition strategy" : [ "DOC-FIN-02" ]
+  },
+  "meanPrecisionAtK" : 0.12941176470588237,
+  "meanAuthorizedRelevantPrecisionAtK" : 0.12941176470588237,
+  "freshLatencyMs" : {
+    "count" : 9.0,
+    "mean" : 1.1885354444444445,
+    "median" : 0.215846,
+    "standardDeviation" : 2.772057535028172,
+    "p95" : 9.027947,
+    "p99" : 9.027947
+  },
+  "cachedLatencyMs" : {
+    "count" : 3.0,
+    "mean" : 0.22071166666666667,
+    "median" : 0.155064,
+    "standardDeviation" : 0.17242001547835317,
+    "p95" : 0.456909,
+    "p99" : 0.456909
+  },
+  "after_revocationLatencyMs" : {
+    "count" : 5.0,
+    "mean" : 0.07652679999999999,
+    "median" : 0.03283,
+    "standardDeviation" : 0.06855697959332806,
+    "p95" : 0.196291,
+    "p99" : 0.196291
+  }
+}

@@ -1,0 +1,43 @@
+[ {
+  "testCaseId" : "RC-1",
+  "scenarioName" : "Fresh Retrieval Revocation",
+  "userId" : "alice",
+  "totalRevocations" : 1,
+  "successfulRevocations" : 1,
+  "successRate" : 1.0,
+  "unauthorizedCachedExposure" : 0,
+  "freshRetrievalLatencyMs" : 0.150005,
+  "cachedRetrievalLatencyMs" : 0.150005,
+  "retrievalLatencyAfterRevocationMs" : 0.110012,
+  "cacheRevalidationOverheadMs" : 0.0,
+  "details" : "Fresh retrieval denial after revocation: true",
+  "timestamp" : "2026-11-17T17:45:23.948250453Z"
+}, {
+  "testCaseId" : "RC-2",
+  "scenarioName" : "Cached Retrieval Revocation",
+  "userId" : "alice",
+  "totalRevocations" : 1,
+  "successfulRevocations" : 1,
+  "successRate" : 1.0,
+  "unauthorizedCachedExposure" : 0,
+  "freshRetrievalLatencyMs" : 0.262311,
+  "cachedRetrievalLatencyMs" : 0.050162,
+  "retrievalLatencyAfterRevocationMs" : 0.013836,
+  "cacheRevalidationOverheadMs" : 0.0,
+  "details" : "Cached hit blocked after revocation: true",
+  "timestamp" : "2026-11-17T17:45:23.949489807Z"
+}, {
+  "testCaseId" : "RC-3",
+  "scenarioName" : "Cache Revalidation",
+  "userId" : "alice",
+  "totalRevocations" : 1,
+  "successfulRevocations" : 1,
+  "successRate" : 1.0,
+  "unauthorizedCachedExposure" : 0,
+  "freshRetrievalLatencyMs" : 0.155064,
+  "cachedRetrievalLatencyMs" : 0.155064,
+  "retrievalLatencyAfterRevocationMs" : 0.03283,
+  "cacheRevalidationOverheadMs" : 0.0,
+  "details" : "Mixed cache revalidation: revoked doc filtered while authorized doc remains",
+  "timestamp" : "2026-11-17T17:45:23.950592430Z"
+} ]

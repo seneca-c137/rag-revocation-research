@@ -1,0 +1,25 @@
+{
+  "seed" : 20261117,
+  "repetitions" : 30,
+  "warmupRuns" : 1,
+  "datasetSizes" : [ 100, 1000, 5000, 10000 ],
+  "experiments" : [ "authorized-retrieval", "unauthorized-retrieval", "fresh-retrieval-revocation", "cached-retrieval-revocation", "multi-document-cache-revalidation", "revocation-event-processing", "precision-at-k" ],
+  "configurationId" : "task6-v1",
+  "runStartedAt" : "2026-11-17T18:14:12.404883536Z",
+  "javaVersion" : "21.0.13.0.3",
+  "osName" : "Linux",
+  "configuration" : {
+    "authorizedUser" : "dataset-user-engineering",
+    "authorizedQueryId" : "QUERY-ENGINEERING",
+    "unauthorizedQueryId" : "QUERY-FINANCE",
+    "topK" : "5",
+    "multiDocumentTopK" : "20",
+    "timingMethod" : "Retrieval and event processing use System.nanoTime; enforcement uses response and commit Instants",
+    "percentileMethod" : "Nearest rank: sorted[ceil(p*n)-1]; standard deviation is population standard deviation",
+    "warmupPolicy" : "Warm-ups are identified in raw rows and excluded from all aggregates",
+    "eventOutcomePolicy" : "Duplicate revocation requests count as successfully handled and are separately counted",
+    "authorizationPolicy" : "Existing metadata filter, authorization service, and PermissionManager revocation behavior",
+    "cachePolicy" : "Existing cache revalidates each cached document before returning it",
+    "performanceScope" : "Simulated in-memory lexical retrieval; not real-world RAG, vector database, or LLM latency"
+  }
+}

@@ -13,8 +13,35 @@ import java.util.Set;
  * Core dynamic authorization engine combining Role-Based Access Control (RBAC),
  * Attribute-Based Access Control (ABAC), and Dynamic Revocation checks.
  *
- * Enforces zero-tolerance for revoked access: any active revocation immediately
- * overrides all other permissions.
+ * =========================================================================================
+ * AUTHORIZATION EVALUATION PRECEDENCE & RESOLUTION ORDER:
+ * =========================================================================================
+ * 1. MANDATORY CLEARANCE & DEPARTMENT CONSTRAINTS:
+ *    - The principal's classification clearance must hierarchically satisfy the document's
+ *      classification level (RESTRICTED > CONFIDENTIAL > INTERNAL > PUBLIC). Insufficient
+ *      clearance results in immediate denial, regardless of role grants or explicit grants.
+ *    - Department boundaries are strictly enforced. Access across departmental boundaries is
+ *      denied unless an explicit user grant/override is active.
+ *
+ * 2. EXPLICIT USER REVOCATION OVERRIDES ROLE GRANTS:
+ *    - If a user has an active, explicit revocation for a target document, access is immediately
+ *      denied. An explicit user revocation supersedes all group/role memberships and metadata
+ *      allowances (zero-tolerance for revoked access).
+ *
+ * 3. NEWER EXPLICIT GRANT OVERRIDES AN OLDER REVOCATION:
+ *    - Permission state transitions are stateful and sequential. An explicit grant action clears
+ *      any prior revocation for that principal and document (transitioning from REVOKED to
+ *      GRANTED). Conversely, a newer revocation clears any prior grant (transitioning from
+ *      GRANTED to REVOKED).
+ *
+ * 4. ROLE GRANTS APPLY ONLY WHEN NO EXPLICIT USER REVOCATION EXISTS:
+ *    - Role-Based Access Control (RBAC) grants apply if and only if no active explicit user
+ *      revocation exists for the target document. If all user roles are revoked, access is denied.
+ *
+ * 5. DENY-BY-DEFAULT:
+ *    - If no applicable explicit user grant or matching allowed role grant authorizes access,
+ *      access is denied by default (zero-privilege baseline).
+ * =========================================================================================
  */
 public class AuthorizationService {
     private final PermissionManager permissionManager;
@@ -26,6 +53,16 @@ public class AuthorizationService {
     /**
      * Evaluates whether a user is currently authorized to access the given document.
      * Records evaluation latency in nanoseconds.
+     *
+     * Precedence Order:
+     * 1. Identity & Active Status Verification
+     * 2. Explicit User Revocation Check (overrides all grants)
+     * 3. Explicit Role Revocation Check (checks if all user roles revoked)
+     * 4. Mandatory Hierarchical Clearance Level Check (ABAC)
+     * 5. Mandatory Department Boundary Check (ABAC - bypassed only by explicit user override)
+     * 6. Direct User Access Grant Check
+     * 7. Role-Based Access Control (RBAC) Match
+     * 8. Deny-by-Default Fallback
      */
     public AuthorizationDecision evaluate(User user, Document document) {
         long startNs = System.nanoTime();

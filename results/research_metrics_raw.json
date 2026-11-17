@@ -1,0 +1,624 @@
+{
+  "retrievalObservations" : [ {
+    "requestId" : "request-1",
+    "userId" : "alice",
+    "query" : "financial earnings revenue",
+    "k" : 5,
+    "cacheHit" : false,
+    "latencyCategory" : "FRESH",
+    "latencyMs" : 9.027947,
+    "documentsReturned" : 1,
+    "unauthorizedDocuments" : 0,
+    "returnedUnauthorizedDocument" : false,
+    "observedAt" : "2026-11-17T17:45:23.926154457Z"
+  }, {
+    "requestId" : "request-2",
+    "userId" : "alice",
+    "query" : "financial earnings",
+    "k" : 5,
+    "cacheHit" : false,
+    "latencyCategory" : "FRESH",
+    "latencyMs" : 0.238648,
+    "documentsReturned" : 1,
+    "unauthorizedDocuments" : 0,
+    "returnedUnauthorizedDocument" : false,
+    "observedAt" : "2026-11-17T17:45:23.928751763Z"
+  }, {
+    "requestId" : "request-3",
+    "userId" : "alice",
+    "query" : "financial earnings",
+    "k" : 5,
+    "cacheHit" : false,
+    "latencyCategory" : "AFTER_REVOCATION",
+    "latencyMs" : 0.196291,
+    "documentsReturned" : 0,
+    "unauthorizedDocuments" : 0,
+    "returnedUnauthorizedDocument" : false,
+    "observedAt" : "2026-11-17T17:45:23.930265240Z"
+  }, {
+    "requestId" : "request-4",
+    "userId" : "bob",
+    "query" : "Proprietary Model Weights",
+    "k" : 5,
+    "cacheHit" : false,
+    "latencyCategory" : "FRESH",
+    "latencyMs" : 0.215846,
+    "documentsReturned" : 1,
+    "unauthorizedDocuments" : 0,
+    "returnedUnauthorizedDocument" : false,
+    "observedAt" : "2026-11-17T17:45:23.931340313Z"
+  }, {
+    "requestId" : "request-5",
+    "userId" : "bob",
+    "query" : "Proprietary Model Weights",
+    "k" : 5,
+    "cacheHit" : false,
+    "latencyCategory" : "FRESH",
+    "latencyMs" : 0.179189,
+    "documentsReturned" : 0,
+    "unauthorizedDocuments" : 0,
+    "returnedUnauthorizedDocument" : false,
+    "observedAt" : "2026-11-17T17:45:23.931763690Z"
+  }, {
+    "requestId" : "request-6",
+    "userId" : "alice",
+    "query" : "acquisition strategy",
+    "k" : 5,
+    "cacheHit" : false,
+    "latencyCategory" : "FRESH",
+    "latencyMs" : 0.182494,
+    "documentsReturned" : 1,
+    "unauthorizedDocuments" : 0,
+    "returnedUnauthorizedDocument" : false,
+    "observedAt" : "2026-11-17T17:45:23.932231027Z"
+  }, {
+    "requestId" : "request-7",
+    "userId" : "alice",
+    "query" : "acquisition strategy",
+    "k" : 5,
+    "cacheHit" : true,
+    "latencyCategory" : "CACHED",
+    "latencyMs" : 0.456909,
+    "documentsReturned" : 1,
+    "unauthorizedDocuments" : 0,
+    "returnedUnauthorizedDocument" : false,
+    "observedAt" : "2026-11-17T17:45:23.932921424Z"
+  }, {
+    "requestId" : "request-8",
+    "userId" : "alice",
+    "query" : "acquisition strategy",
+    "k" : 5,
+    "cacheHit" : true,
+    "latencyCategory" : "AFTER_REVOCATION",
+    "latencyMs" : 0.029665,
+    "documentsReturned" : 0,
+    "unauthorizedDocuments" : 0,
+    "returnedUnauthorizedDocument" : false,
+    "observedAt" : "2026-11-17T17:45:23.933057153Z"
+  }, {
+    "requestId" : "request-9",
+    "userId" : "bob",
+    "query" : "strategy",
+    "k" : 10,
+    "cacheHit" : false,
+    "latencyCategory" : "FRESH",
+    "latencyMs" : 0.295082,
+    "documentsReturned" : 0,
+    "unauthorizedDocuments" : 0,
+    "returnedUnauthorizedDocument" : false,
+    "observedAt" : "2026-11-17T17:45:23.945964107Z"
+  }, {
+    "requestId" : "request-10",
+    "userId" : "eve",
+    "query" : "financial earnings revenue",
+    "k" : 5,
+    "cacheHit" : false,
+    "latencyCategory" : "FRESH",
+    "latencyMs" : 0.145297,
+    "documentsReturned" : 0,
+    "unauthorizedDocuments" : 0,
+    "returnedUnauthorizedDocument" : false,
+    "observedAt" : "2026-11-17T17:45:23.946702793Z"
+  }, {
+    "requestId" : "request-11",
+    "userId" : "alice",
+    "query" : "financial earnings",
+    "k" : 5,
+    "cacheHit" : false,
+    "latencyCategory" : "FRESH",
+    "latencyMs" : 0.150005,
+    "documentsReturned" : 1,
+    "unauthorizedDocuments" : 0,
+    "returnedUnauthorizedDocument" : false,
+    "observedAt" : "2026-11-17T17:45:23.946958161Z"
+  }, {
+    "requestId" : "request-12",
+    "userId" : "alice",
+    "query" : "financial earnings",
+    "k" : 5,
+    "cacheHit" : false,
+    "latencyCategory" : "AFTER_REVOCATION",
+    "latencyMs" : 0.110012,
+    "documentsReturned" : 0,
+    "unauthorizedDocuments" : 0,
+    "returnedUnauthorizedDocument" : false,
+    "observedAt" : "2026-11-17T17:45:23.947327289Z"
+  }, {
+    "requestId" : "request-13",
+    "userId" : "alice",
+    "query" : "acquisition strategy",
+    "k" : 5,
+    "cacheHit" : false,
+    "latencyCategory" : "FRESH",
+    "latencyMs" : 0.262311,
+    "documentsReturned" : 1,
+    "unauthorizedDocuments" : 0,
+    "returnedUnauthorizedDocument" : false,
+    "observedAt" : "2026-11-17T17:45:23.948712040Z"
+  }, {
+    "requestId" : "request-14",
+    "userId" : "alice",
+    "query" : "acquisition strategy",
+    "k" : 5,
+    "cacheHit" : true,
+    "latencyCategory" : "CACHED",
+    "latencyMs" : 0.050162,
+    "documentsReturned" : 1,
+    "unauthorizedDocuments" : 0,
+    "returnedUnauthorizedDocument" : false,
+    "observedAt" : "2026-11-17T17:45:23.949055229Z"
+  }, {
+    "requestId" : "request-15",
+    "userId" : "alice",
+    "query" : "acquisition strategy",
+    "k" : 5,
+    "cacheHit" : true,
+    "latencyCategory" : "AFTER_REVOCATION",
+    "latencyMs" : 0.013836,
+    "documentsReturned" : 0,
+    "unauthorizedDocuments" : 0,
+    "returnedUnauthorizedDocument" : false,
+    "observedAt" : "2026-11-17T17:45:23.949181160Z"
+  }, {
+    "requestId" : "request-16",
+    "userId" : "alice",
+    "query" : "finance multi",
+    "k" : 5,
+    "cacheHit" : true,
+    "latencyCategory" : "CACHED",
+    "latencyMs" : 0.155064,
+    "documentsReturned" : 2,
+    "unauthorizedDocuments" : 0,
+    "returnedUnauthorizedDocument" : false,
+    "observedAt" : "2026-11-17T17:45:23.949831334Z"
+  }, {
+    "requestId" : "request-17",
+    "userId" : "alice",
+    "query" : "finance multi",
+    "k" : 5,
+    "cacheHit" : true,
+    "latencyCategory" : "AFTER_REVOCATION",
+    "latencyMs" : 0.03283,
+    "documentsReturned" : 1,
+    "unauthorizedDocuments" : 0,
+    "returnedUnauthorizedDocument" : false,
+    "observedAt" : "2026-11-17T17:45:23.949963185Z"
+  } ],
+  "documentObservations" : [ {
+    "requestId" : "request-1",
+    "userId" : "alice",
+    "documentId" : "DOC-FIN-01",
+    "authorized" : true,
+    "relevant" : true,
+    "relevanceLabelSource" : "SIMULATED_QUERY_DOCUMENT_GROUND_TRUTH",
+    "observedAt" : "2026-11-17T17:45:23.926154457Z"
+  }, {
+    "requestId" : "request-2",
+    "userId" : "alice",
+    "documentId" : "DOC-FIN-01",
+    "authorized" : true,
+    "relevant" : true,
+    "relevanceLabelSource" : "SIMULATED_QUERY_DOCUMENT_GROUND_TRUTH",
+    "observedAt" : "2026-11-17T17:45:23.928751763Z"
+  }, {
+    "requestId" : "request-4",
+    "userId" : "bob",
+    "documentId" : "DOC-ENG-02",
+    "authorized" : true,
+    "relevant" : true,
+    "relevanceLabelSource" : "SIMULATED_QUERY_DOCUMENT_GROUND_TRUTH",
+    "observedAt" : "2026-11-17T17:45:23.931340313Z"
+  }, {
+    "requestId" : "request-6",
+    "userId" : "alice",
+    "documentId" : "DOC-FIN-02",
+    "authorized" : true,
+    "relevant" : true,
+    "relevanceLabelSource" : "SIMULATED_QUERY_DOCUMENT_GROUND_TRUTH",
+    "observedAt" : "2026-11-17T17:45:23.932231027Z"
+  }, {
+    "requestId" : "request-7",
+    "userId" : "alice",
+    "documentId" : "DOC-FIN-02",
+    "authorized" : true,
+    "relevant" : true,
+    "relevanceLabelSource" : "SIMULATED_QUERY_DOCUMENT_GROUND_TRUTH",
+    "observedAt" : "2026-11-17T17:45:23.932921424Z"
+  }, {
+    "requestId" : "request-11",
+    "userId" : "alice",
+    "documentId" : "DOC-FIN-01",
+    "authorized" : true,
+    "relevant" : true,
+    "relevanceLabelSource" : "SIMULATED_QUERY_DOCUMENT_GROUND_TRUTH",
+    "observedAt" : "2026-11-17T17:45:23.946958161Z"
+  }, {
+    "requestId" : "request-13",
+    "userId" : "alice",
+    "documentId" : "DOC-FIN-02",
+    "authorized" : true,
+    "relevant" : true,
+    "relevanceLabelSource" : "SIMULATED_QUERY_DOCUMENT_GROUND_TRUTH",
+    "observedAt" : "2026-11-17T17:45:23.948712040Z"
+  }, {
+    "requestId" : "request-14",
+    "userId" : "alice",
+    "documentId" : "DOC-FIN-02",
+    "authorized" : true,
+    "relevant" : true,
+    "relevanceLabelSource" : "SIMULATED_QUERY_DOCUMENT_GROUND_TRUTH",
+    "observedAt" : "2026-11-17T17:45:23.949055229Z"
+  }, {
+    "requestId" : "request-16",
+    "userId" : "alice",
+    "documentId" : "DOC-FIN-01",
+    "authorized" : true,
+    "relevant" : true,
+    "relevanceLabelSource" : "SIMULATED_QUERY_DOCUMENT_GROUND_TRUTH",
+    "observedAt" : "2026-11-17T17:45:23.949831334Z"
+  }, {
+    "requestId" : "request-16",
+    "userId" : "alice",
+    "documentId" : "DOC-FIN-02",
+    "authorized" : true,
+    "relevant" : true,
+    "relevanceLabelSource" : "SIMULATED_QUERY_DOCUMENT_GROUND_TRUTH",
+    "observedAt" : "2026-11-17T17:45:23.949831334Z"
+  }, {
+    "requestId" : "request-17",
+    "userId" : "alice",
+    "documentId" : "DOC-FIN-02",
+    "authorized" : true,
+    "relevant" : true,
+    "relevanceLabelSource" : "SIMULATED_QUERY_DOCUMENT_GROUND_TRUTH",
+    "observedAt" : "2026-11-17T17:45:23.949963185Z"
+  } ],
+  "revocationObservations" : [ {
+    "eventId" : "revocation-1",
+    "userId" : "alice",
+    "documentId" : "DOC-FIN-01",
+    "generatedAt" : "2026-11-17T17:45:23.929367022Z",
+    "processingStartedAt" : "2026-11-17T17:45:23.929487793Z",
+    "permissionCommittedAt" : "2026-11-17T17:45:23.929840571Z",
+    "processedAt" : "2026-11-17T17:45:23.929886465Z",
+    "firstDeniedAt" : "2026-11-17T17:45:23.930265240Z",
+    "outcome" : "PROCESSED",
+    "duplicate" : false,
+    "failure" : null,
+    "eventProcessingLatencyMs" : 0.519443,
+    "revocationEnforcementLatencyMs" : 0.424669
+  }, {
+    "eventId" : "revocation-2",
+    "userId" : "alice",
+    "documentId" : "DOC-FIN-02",
+    "generatedAt" : "2026-11-17T17:45:23.932986894Z",
+    "processingStartedAt" : "2026-11-17T17:45:23.932990160Z",
+    "permissionCommittedAt" : "2026-11-17T17:45:23.933003114Z",
+    "processedAt" : "2026-11-17T17:45:23.933013773Z",
+    "firstDeniedAt" : "2026-11-17T17:45:23.933057153Z",
+    "outcome" : "PROCESSED",
+    "duplicate" : false,
+    "failure" : null,
+    "eventProcessingLatencyMs" : 0.026879,
+    "revocationEnforcementLatencyMs" : 0.054039
+  }, {
+    "eventId" : "revocation-3",
+    "userId" : "alice",
+    "documentId" : "DOC-FIN-01",
+    "generatedAt" : "2026-11-17T17:45:23.947177153Z",
+    "processingStartedAt" : "2026-11-17T17:45:23.947182042Z",
+    "permissionCommittedAt" : "2026-11-17T17:45:23.947193213Z",
+    "processedAt" : "2026-11-17T17:45:23.947201708Z",
+    "firstDeniedAt" : "2026-11-17T17:45:23.947327289Z",
+    "outcome" : "PROCESSED",
+    "duplicate" : false,
+    "failure" : null,
+    "eventProcessingLatencyMs" : 0.024555,
+    "revocationEnforcementLatencyMs" : 0.134076
+  }, {
+    "eventId" : "revocation-4",
+    "userId" : "alice",
+    "documentId" : "DOC-FIN-02",
+    "generatedAt" : "2026-11-17T17:45:23.949127983Z",
+    "processingStartedAt" : "2026-11-17T17:45:23.949131349Z",
+    "permissionCommittedAt" : "2026-11-17T17:45:23.949144052Z",
+    "processedAt" : "2026-11-17T17:45:23.949153951Z",
+    "firstDeniedAt" : "2026-11-17T17:45:23.949181160Z",
+    "outcome" : "PROCESSED",
+    "duplicate" : false,
+    "failure" : null,
+    "eventProcessingLatencyMs" : 0.025968,
+    "revocationEnforcementLatencyMs" : 0.037108
+  }, {
+    "eventId" : "revocation-5",
+    "userId" : "alice",
+    "documentId" : "DOC-FIN-01",
+    "generatedAt" : "2026-11-17T17:45:23.949892466Z",
+    "processingStartedAt" : "2026-11-17T17:45:23.949895591Z",
+    "permissionCommittedAt" : "2026-11-17T17:45:23.949907604Z",
+    "processedAt" : "2026-11-17T17:45:23.949917031Z",
+    "firstDeniedAt" : "2026-11-17T17:45:23.949963185Z",
+    "outcome" : "PROCESSED",
+    "duplicate" : false,
+    "failure" : null,
+    "eventProcessingLatencyMs" : 0.024565,
+    "revocationEnforcementLatencyMs" : 0.055581
+  } ],
+  "precisionObservations" : [ {
+    "requestId" : "request-1",
+    "userId" : "alice",
+    "query" : "financial earnings revenue",
+    "k" : 5,
+    "relevantRetrieved" : 1,
+    "authorizedRelevantRetrieved" : 1,
+    "precisionAtK" : 0.2,
+    "authorizedRelevantPrecisionAtK" : 0.2,
+    "observedAt" : "2026-11-17T17:45:23.926154457Z"
+  }, {
+    "requestId" : "request-2",
+    "userId" : "alice",
+    "query" : "financial earnings",
+    "k" : 5,
+    "relevantRetrieved" : 1,
+    "authorizedRelevantRetrieved" : 1,
+    "precisionAtK" : 0.2,
+    "authorizedRelevantPrecisionAtK" : 0.2,
+    "observedAt" : "2026-11-17T17:45:23.928751763Z"
+  }, {
+    "requestId" : "request-3",
+    "userId" : "alice",
+    "query" : "financial earnings",
+    "k" : 5,
+    "relevantRetrieved" : 0,
+    "authorizedRelevantRetrieved" : 0,
+    "precisionAtK" : 0.0,
+    "authorizedRelevantPrecisionAtK" : 0.0,
+    "observedAt" : "2026-11-17T17:45:23.930265240Z"
+  }, {
+    "requestId" : "request-4",
+    "userId" : "bob",
+    "query" : "Proprietary Model Weights",
+    "k" : 5,
+    "relevantRetrieved" : 1,
+    "authorizedRelevantRetrieved" : 1,
+    "precisionAtK" : 0.2,
+    "authorizedRelevantPrecisionAtK" : 0.2,
+    "observedAt" : "2026-11-17T17:45:23.931340313Z"
+  }, {
+    "requestId" : "request-5",
+    "userId" : "bob",
+    "query" : "Proprietary Model Weights",
+    "k" : 5,
+    "relevantRetrieved" : 0,
+    "authorizedRelevantRetrieved" : 0,
+    "precisionAtK" : 0.0,
+    "authorizedRelevantPrecisionAtK" : 0.0,
+    "observedAt" : "2026-11-17T17:45:23.931763690Z"
+  }, {
+    "requestId" : "request-6",
+    "userId" : "alice",
+    "query" : "acquisition strategy",
+    "k" : 5,
+    "relevantRetrieved" : 1,
+    "authorizedRelevantRetrieved" : 1,
+    "precisionAtK" : 0.2,
+    "authorizedRelevantPrecisionAtK" : 0.2,
+    "observedAt" : "2026-11-17T17:45:23.932231027Z"
+  }, {
+    "requestId" : "request-7",
+    "userId" : "alice",
+    "query" : "acquisition strategy",
+    "k" : 5,
+    "relevantRetrieved" : 1,
+    "authorizedRelevantRetrieved" : 1,
+    "precisionAtK" : 0.2,
+    "authorizedRelevantPrecisionAtK" : 0.2,
+    "observedAt" : "2026-11-17T17:45:23.932921424Z"
+  }, {
+    "requestId" : "request-8",
+    "userId" : "alice",
+    "query" : "acquisition strategy",
+    "k" : 5,
+    "relevantRetrieved" : 0,
+    "authorizedRelevantRetrieved" : 0,
+    "precisionAtK" : 0.0,
+    "authorizedRelevantPrecisionAtK" : 0.0,
+    "observedAt" : "2026-11-17T17:45:23.933057153Z"
+  }, {
+    "requestId" : "request-9",
+    "userId" : "bob",
+    "query" : "strategy",
+    "k" : 10,
+    "relevantRetrieved" : 0,
+    "authorizedRelevantRetrieved" : 0,
+    "precisionAtK" : 0.0,
+    "authorizedRelevantPrecisionAtK" : 0.0,
+    "observedAt" : "2026-11-17T17:45:23.945964107Z"
+  }, {
+    "requestId" : "request-10",
+    "userId" : "eve",
+    "query" : "financial earnings revenue",
+    "k" : 5,
+    "relevantRetrieved" : 0,
+    "authorizedRelevantRetrieved" : 0,
+    "precisionAtK" : 0.0,
+    "authorizedRelevantPrecisionAtK" : 0.0,
+    "observedAt" : "2026-11-17T17:45:23.946702793Z"
+  }, {
+    "requestId" : "request-11",
+    "userId" : "alice",
+    "query" : "financial earnings",
+    "k" : 5,
+    "relevantRetrieved" : 1,
+    "authorizedRelevantRetrieved" : 1,
+    "precisionAtK" : 0.2,
+    "authorizedRelevantPrecisionAtK" : 0.2,
+    "observedAt" : "2026-11-17T17:45:23.946958161Z"
+  }, {
+    "requestId" : "request-12",
+    "userId" : "alice",
+    "query" : "financial earnings",
+    "k" : 5,
+    "relevantRetrieved" : 0,
+    "authorizedRelevantRetrieved" : 0,
+    "precisionAtK" : 0.0,
+    "authorizedRelevantPrecisionAtK" : 0.0,
+    "observedAt" : "2026-11-17T17:45:23.947327289Z"
+  }, {
+    "requestId" : "request-13",
+    "userId" : "alice",
+    "query" : "acquisition strategy",
+    "k" : 5,
+    "relevantRetrieved" : 1,
+    "authorizedRelevantRetrieved" : 1,
+    "precisionAtK" : 0.2,
+    "authorizedRelevantPrecisionAtK" : 0.2,
+    "observedAt" : "2026-11-17T17:45:23.948712040Z"
+  }, {
+    "requestId" : "request-14",
+    "userId" : "alice",
+    "query" : "acquisition strategy",
+    "k" : 5,
+    "relevantRetrieved" : 1,
+    "authorizedRelevantRetrieved" : 1,
+    "precisionAtK" : 0.2,
+    "authorizedRelevantPrecisionAtK" : 0.2,
+    "observedAt" : "2026-11-17T17:45:23.949055229Z"
+  }, {
+    "requestId" : "request-15",
+    "userId" : "alice",
+    "query" : "acquisition strategy",
+    "k" : 5,
+    "relevantRetrieved" : 0,
+    "authorizedRelevantRetrieved" : 0,
+    "precisionAtK" : 0.0,
+    "authorizedRelevantPrecisionAtK" : 0.0,
+    "observedAt" : "2026-11-17T17:45:23.949181160Z"
+  }, {
+    "requestId" : "request-16",
+    "userId" : "alice",
+    "query" : "finance multi",
+    "k" : 5,
+    "relevantRetrieved" : 2,
+    "authorizedRelevantRetrieved" : 2,
+    "precisionAtK" : 0.4,
+    "authorizedRelevantPrecisionAtK" : 0.4,
+    "observedAt" : "2026-11-17T17:45:23.949831334Z"
+  }, {
+    "requestId" : "request-17",
+    "userId" : "alice",
+    "query" : "finance multi",
+    "k" : 5,
+    "relevantRetrieved" : 1,
+    "authorizedRelevantRetrieved" : 1,
+    "precisionAtK" : 0.2,
+    "authorizedRelevantPrecisionAtK" : 0.2,
+    "observedAt" : "2026-11-17T17:45:23.949963185Z"
+  } ],
+  "latencyObservations" : [ {
+    "requestId" : "request-1",
+    "category" : "FRESH",
+    "latencyMs" : 9.027947,
+    "observedAt" : "2026-11-17T17:45:23.926154457Z"
+  }, {
+    "requestId" : "request-2",
+    "category" : "FRESH",
+    "latencyMs" : 0.238648,
+    "observedAt" : "2026-11-17T17:45:23.928751763Z"
+  }, {
+    "requestId" : "request-3",
+    "category" : "AFTER_REVOCATION",
+    "latencyMs" : 0.196291,
+    "observedAt" : "2026-11-17T17:45:23.930265240Z"
+  }, {
+    "requestId" : "request-4",
+    "category" : "FRESH",
+    "latencyMs" : 0.215846,
+    "observedAt" : "2026-11-17T17:45:23.931340313Z"
+  }, {
+    "requestId" : "request-5",
+    "category" : "FRESH",
+    "latencyMs" : 0.179189,
+    "observedAt" : "2026-11-17T17:45:23.931763690Z"
+  }, {
+    "requestId" : "request-6",
+    "category" : "FRESH",
+    "latencyMs" : 0.182494,
+    "observedAt" : "2026-11-17T17:45:23.932231027Z"
+  }, {
+    "requestId" : "request-7",
+    "category" : "CACHED",
+    "latencyMs" : 0.456909,
+    "observedAt" : "2026-11-17T17:45:23.932921424Z"
+  }, {
+    "requestId" : "request-8",
+    "category" : "AFTER_REVOCATION",
+    "latencyMs" : 0.029665,
+    "observedAt" : "2026-11-17T17:45:23.933057153Z"
+  }, {
+    "requestId" : "request-9",
+    "category" : "FRESH",
+    "latencyMs" : 0.295082,
+    "observedAt" : "2026-11-17T17:45:23.945964107Z"
+  }, {
+    "requestId" : "request-10",
+    "category" : "FRESH",
+    "latencyMs" : 0.145297,
+    "observedAt" : "2026-11-17T17:45:23.946702793Z"
+  }, {
+    "requestId" : "request-11",
+    "category" : "FRESH",
+    "latencyMs" : 0.150005,
+    "observedAt" : "2026-11-17T17:45:23.946958161Z"
+  }, {
+    "requestId" : "request-12",
+    "category" : "AFTER_REVOCATION",
+    "latencyMs" : 0.110012,
+    "observedAt" : "2026-11-17T17:45:23.947327289Z"
+  }, {
+    "requestId" : "request-13",
+    "category" : "FRESH",
+    "latencyMs" : 0.262311,
+    "observedAt" : "2026-11-17T17:45:23.948712040Z"
+  }, {
+    "requestId" : "request-14",
+    "category" : "CACHED",
+    "latencyMs" : 0.050162,
+    "observedAt" : "2026-11-17T17:45:23.949055229Z"
+  }, {
+    "requestId" : "request-15",
+    "category" : "AFTER_REVOCATION",
+    "latencyMs" : 0.013836,
+    "observedAt" : "2026-11-17T17:45:23.949181160Z"
+  }, {
+    "requestId" : "request-16",
+    "category" : "CACHED",
+    "latencyMs" : 0.155064,
+    "observedAt" : "2026-11-17T17:45:23.949831334Z"
+  }, {
+    "requestId" : "request-17",
+    "category" : "AFTER_REVOCATION",
+    "latencyMs" : 0.03283,
+    "observedAt" : "2026-11-17T17:45:23.949963185Z"
+  } ]
+}

@@ -1,5 +1,8 @@
 package edu.academic.rag.accesscontrol.model;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.time.Instant;
 
 /**
@@ -18,9 +21,19 @@ public class ExperimentResult {
     private final String details;
     private final Instant timestamp;
 
-    public ExperimentResult(String testCaseId, String testCaseName, String scenario, String userId,
-                            boolean passed, double latencyMs, int documentsReturned, boolean cacheHit,
-                            String authorizationDecision, String details, Instant timestamp) {
+    @JsonCreator
+    public ExperimentResult(
+            @JsonProperty("testCaseId") String testCaseId,
+            @JsonProperty("testCaseName") String testCaseName,
+            @JsonProperty("scenario") String scenario,
+            @JsonProperty("userId") String userId,
+            @JsonProperty("passed") boolean passed,
+            @JsonProperty("latencyMs") double latencyMs,
+            @JsonProperty("documentsReturned") int documentsReturned,
+            @JsonProperty("cacheHit") boolean cacheHit,
+            @JsonProperty("authorizationDecision") String authorizationDecision,
+            @JsonProperty("details") String details,
+            @JsonProperty("timestamp") Instant timestamp) {
         this.testCaseId = testCaseId;
         this.testCaseName = testCaseName;
         this.scenario = scenario;
