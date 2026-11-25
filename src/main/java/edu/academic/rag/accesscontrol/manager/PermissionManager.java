@@ -74,7 +74,7 @@ public class PermissionManager {
      * @param documentId target document identifier
      * @return GRANTED, REVOKED, or UNSPECIFIED
      */
-    public PermissionState getUserPermissionState(String userId, String documentId) {
+    public synchronized PermissionState getUserPermissionState(String userId, String documentId) {
         if (userId == null || documentId == null) {
             return PermissionState.UNSPECIFIED;
         }
@@ -130,8 +130,9 @@ public class PermissionManager {
         grantUserAccess(userId, documentId, "Explicit user permission grant");
     }
 
-    public void grantUserAccess(String userId, String documentId, String reason) {
+    public synchronized void grantUserAccess(String userId, String documentId, String reason) {
         if (userId == null || documentId == null) return;
+
         PermissionState previousState = getUserPermissionState(userId, documentId);
         userRevocations.computeIfPresent(userId, (k, set) -> {
             set.remove(documentId);
@@ -145,7 +146,7 @@ public class PermissionManager {
         revokeUserAccess(userId, documentId, "Explicit user permission revocation");
     }
 
-    public void revokeUserAccess(String userId, String documentId, String reason) {
+    public synchronized void revokeUserAccess(String userId, String documentId, String reason) {
         if (userId == null || documentId == null) return;
         PermissionState previousState = getUserPermissionState(userId, documentId);
         userGrants.computeIfPresent(userId, (k, set) -> {
@@ -156,14 +157,16 @@ public class PermissionManager {
         recordTransition(userId, "USER", documentId, "REVOKE", previousState, PermissionState.REVOKED, reason);
     }
 
-    public boolean isUserAccessRevoked(String userId, String documentId) {
-        if (userId == null || documentId == null) return false;
+    public synchronized boolean isUserAccessRevoked(String userId, String documentId) {
+        if (userId == null || documentId == null)
+            return false;
         Set<String> revoked = userRevocations.get(userId);
         return revoked != null && revoked.contains(documentId);
     }
 
-    public boolean isUserAccessGranted(String userId, String documentId) {
-        if (userId == null || documentId == null) return false;
+    public synchronized boolean isUserAccessGranted(String userId, String documentId) {
+        if (userId == null || documentId == null)
+            return false;
         Set<String> granted = userGrants.get(userId);
         return granted != null && granted.contains(documentId);
     }
@@ -175,7 +178,8 @@ public class PermissionManager {
     }
 
     public void grantRoleAccess(String role, String documentId, String reason) {
-        if (role == null || documentId == null) return;
+        if (role == null || documentId == null)
+            return;
         String normalizedRole = role.trim().toUpperCase();
         PermissionState previousState = getRolePermissionState(normalizedRole, documentId);
         roleRevocations.computeIfPresent(normalizedRole, (k, set) -> {
@@ -191,7 +195,8 @@ public class PermissionManager {
     }
 
     public void revokeRoleAccess(String role, String documentId, String reason) {
-        if (role == null || documentId == null) return;
+        if (role == null || documentId == null)
+            return;
         String normalizedRole = role.trim().toUpperCase();
         PermissionState previousState = getRolePermissionState(normalizedRole, documentId);
         roleGrants.computeIfPresent(normalizedRole, (k, set) -> {
@@ -201,15 +206,16 @@ public class PermissionManager {
         roleRevocations.computeIfAbsent(normalizedRole, k -> ConcurrentHashMap.newKeySet()).add(documentId);
         recordTransition(normalizedRole, "ROLE", documentId, "REVOKE", previousState, PermissionState.REVOKED, reason);
     }
-
     public boolean isRoleAccessRevoked(String role, String documentId) {
-        if (role == null || documentId == null) return false;
+        if (role == null || documentId == null)
+            return false;
         Set<String> revoked = roleRevocations.get(role.trim().toUpperCase());
         return revoked != null && revoked.contains(documentId);
     }
 
     public boolean isRoleAccessGranted(String role, String documentId) {
-        if (role == null || documentId == null) return false;
+        if (role == null || documentId == null)
+            return false;
         Set<String> granted = roleGrants.get(role.trim().toUpperCase());
         return granted != null && granted.contains(documentId);
     }
@@ -217,12 +223,13 @@ public class PermissionManager {
     // --- Audit & Transition Recording ---
 
     /**
-     * Records a permission transition event capturing action, previous state, updated state,
+     * Records a permission transition event capturing action, previous state,
+     * updated state,
      * reason, and timestamp.
      */
     public RevocationRecord recordTransition(String principal, String targetType, String documentId,
-                                             String action, PermissionState previousState, PermissionState updatedState,
-                                             String reason) {
+            String action, PermissionState previousState, PermissionState updatedState,
+            String reason) {
         RevocationRecord record = new RevocationRecord(principal, targetType, documentId,
                 action, previousState, updatedState, reason, Instant.now());
         recordTransition(record);
@@ -246,7 +253,8 @@ public class PermissionManager {
     }
 
     /**
-     * Returns a copy of the complete audit log containing all permission transitions (both GRANT and REVOKE).
+     * Returns a copy of the complete audit log containing all permission
+     * transitions (both GRANT and REVOKE).
      */
     public List<RevocationRecord> getAuditHistory() {
         return new ArrayList<>(auditHistory);

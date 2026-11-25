@@ -6,10 +6,12 @@ import edu.academic.rag.accesscontrol.model.RevocationRecord;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.time.Instant;
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("PermissionManager Unit Tests")
@@ -278,5 +280,64 @@ class PermissionManagerTest {
         assertEquals("GRANT", customRecord.action());
         assertEquals(PermissionState.GRANTED, customRecord.updatedState());
         assertTrue(permissionManager.getAuditHistory().contains(customRecord));
+    }
+
+    @Test
+    @DisplayName("Concurrent grant and revoke should not leave conflicting permission states")
+    void testConcurrentGrantAndRevoke() throws Exception {
+        String userId = "alice";
+        String documentId = "doc-race";
+
+        int rounds = 100;
+        int iterationsPerRound = 1_000;
+
+        CountDownLatch startLatch = new CountDownLatch(1);
+
+        ExecutorService executor = Executors.newFixedThreadPool(2);
+
+        try {
+            // Grant thread
+            Future<?> grantTask = executor.submit(() -> {
+                startLatch.await();
+
+                for (int round = 0; round < rounds; round++) {
+                    for (int i = 0; i < iterationsPerRound; i++) {
+                        permissionManager.grantUserAccess(userId, documentId);
+                    }
+                }
+                return null;
+            });
+
+            // Revoke thread
+            Future<?> revokeTask = executor.submit(() -> {
+                startLatch.await();
+
+                for (int round = 0; round < rounds; round++) {
+                    for (int i = 0; i < iterationsPerRound; i++) {
+                        permissionManager.revokeUserAccess(userId, documentId);
+                    }
+                }
+                return null;
+            });
+
+            // Start both workers simultaneously
+            startLatch.countDown();
+
+            // Wait for both threads to finish
+            grantTask.get();
+            revokeTask.get();
+
+            // Check final permission state
+            boolean granted = permissionManager.isUserAccessGranted(userId, documentId);
+
+            boolean revoked = permissionManager.isUserAccessRevoked(userId, documentId);
+
+            assertFalse(granted && revoked,
+                    "Final permission state is both granted and revoked");
+
+        } finally {
+            executor.shutdown();
+        }
+
     }
 }
