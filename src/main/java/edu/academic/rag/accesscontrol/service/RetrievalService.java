@@ -1,11 +1,22 @@
 package edu.academic.rag.accesscontrol.service;
 
-import edu.academic.rag.accesscontrol.manager.UserManager;
-import edu.academic.rag.accesscontrol.model.*;
-import edu.academic.rag.accesscontrol.repository.DocumentRepository;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.Set;
 import java.util.stream.Collectors;
+
+import edu.academic.rag.accesscontrol.manager.UserManager;
+import edu.academic.rag.accesscontrol.model.AuthorizationDecision;
+import edu.academic.rag.accesscontrol.model.Document;
+import edu.academic.rag.accesscontrol.model.RetrievalRequest;
+import edu.academic.rag.accesscontrol.model.RetrievalResponse;
+import edu.academic.rag.accesscontrol.model.User;
+import edu.academic.rag.accesscontrol.repository.DocumentRepository;
 
 /**
  * Orchestrates the secure RAG document retrieval pipeline:
@@ -53,7 +64,7 @@ public class RetrievalService {
         }
         User currentUser = userOpt.get();
 
-        String cacheKey = buildCacheKey(userId, query);
+        String cacheKey = buildCacheKey(userId, query,topK);
 
         // 2. Check Cache with Mandatory Authorization Revalidation
         Optional<CacheService.RevalidationResult> cacheResult =
@@ -143,8 +154,8 @@ public class RetrievalService {
         return score;
     }
 
-    private String buildCacheKey(String userId, String query) {
-        return userId + ":" + (query != null ? query.trim().toLowerCase() : "");
+    private String buildCacheKey(String userId, String query,int topK) {
+        return userId + ":" + (query != null ? query.trim().toLowerCase() : "") + ":" + topK;
     }
 
     private record ScoredCandidate(Document document, double score) {}
